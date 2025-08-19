@@ -1,0 +1,15 @@
+{
+  "name": "ugc-archiver",
+  "private": true,
+  "scripts": {
+    "build": "tsc -p .",
+    "start": "func start"
+  },
+  "dependencies": {
+    "@azure/functions": "^4.4.0",
+    "@azure/storage-blob": "^12.18.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
