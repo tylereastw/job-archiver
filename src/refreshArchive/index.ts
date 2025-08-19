@@ -24,7 +24,7 @@ export async function refreshArchive(req: HttpRequest, context: InvocationContex
 
     return { status: 200, jsonBody: { ok: true, blob: blobPath, manifest: `${PREFIX}/latest.json`, count } };
   } catch (e: any) {
-    context.log.error(e);
+    context.error(e);
     return { status: 500, jsonBody: { ok: false, error: String(e?.message || e) } };
   }
 }

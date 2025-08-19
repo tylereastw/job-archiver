@@ -41,10 +41,6 @@ export async function writeLatestManifest(
     count
   }, null, 2));
   await latest.uploadData(body, {
-    overwrite: true,
-    blobHTTPHeaders: {
-      blobContentType: "application/json",
-      blobCacheControl: "no-cache"
-    }
+    blobHTTPHeaders: { blobContentType: "application/json", blobCacheControl: "no-cache" }
   });
 }
